@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <form action="" method="post">
+            <fieldset>
+                <legend>注册</legend>
+
+                <!-- 文本输入框 -->
+                用户名:<input type="text" maxlength="4" name="username" value="实验楼">
+                <br>
+                <br>
+                <!--邮箱-->
+                邮箱：<input type="email" id="email" name="email" multiple>
+                <br>
+                <br>
+                <!--电话号码-->
+                电话号码：<input type="tel" id="tel" name="tel">
+                <br>
+                <br>
+                <!-- 密码输入框 -->
+                密码:<input type="password" name="pwd">
+                <br>
+                <br>
+                <!-- 单选框 -->
+                <input type="radio" name="gender" checked="checked">男
+
+                <input type="radio" name="gender">女
+                <br><br>
+                <!-- 下拉列表 -->
+                省(市)：
+                <select>
+                    <option>北京</option>
+                    <option>上海</option>
+                    <option>广东</option>
+                    <option selected="selected">深圳</option>
+                </select>
+                <!-- 下拉列表多选 -->
+                <select multiple="multiple">
+                    <option>北京</option>
+                    <option>上海</option>
+                    <option>广东</option>
+                    <option selected="selected">深圳</option>
+                </select>
+                市(区):
+                <select>
+                    <!-- 下拉列表信息分组 -->
+                    <optgroup label="北京市">
+                        <option>东城区</option>
+                        <option>西城区</option>
+                        <option>朝阳区</option>
+                        <option>丰台区</option>
+                    </optgroup>
+                    <optgroup label="上海市">
+                        <option>黄浦区</option>
+                        <option>徐汇区</option>
+                        <option>长宁区</option>
+                        <option>静安区</option>
+                    </optgroup>
+                </select>
+                <br><br>
+                <!-- 多选框 -->
+                <input type="checkbox" checked="checked">吃饭
+                <input type="checkbox" checked="checked">睡觉
+                <input type="checkbox" checked="checked">打豆豆
+
+                <!-- 多行文本框 -->
+                <textarea cols="130" rows="10"></textarea><br><br>
+
+                <label for="myColor">你最爱的颜色是什么？</label>
+                <input type="text" name="myColor" id="myColor" list="mySuggestion">
+                <datalist id="mySuggestion">
+                    <option>black</option>
+                    <option>blue</option>
+                    <option>green</option>
+                    <option>red</option>
+                    <option>black</option>
+                    <option>yellow</option>
+                </datalist>
+                <br><br>
+
+                <!-- 文件上传控件 -->
+                <input type="file">
+                <br><br>
+
+                <!-- 文件提交按钮 -->
+                <input type="submit">
+
+                <!-- 普通按钮 -->
+                <!-- <input type="button" value="普通按钮"> -->
+
+                <!-- 图片按钮 -->
+                <!--<input type="image" src="按钮.jpg">-->
+
+                <!-- 重置按钮 -->
+                <input type="reset">
+            </fieldset>
+        </form>
+
+    </body>
+
+</html>
